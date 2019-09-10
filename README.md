@@ -10,14 +10,27 @@ We have a long color data array that basically stores 3 ints at each index to ho
 
 Example procedures:
 
-m=1 r=255 g=0 b=0 f=0 l=150 i=1 z : will set every led from 0 to 150 to max red value, and 0 blue/green value.
-m=1 g=255 i=2 z                   : will set every second led from stored first to stored last to maximum green value, as well as whatever red/blue is currently stored
-m=2 r=255 g=255 b=255 z           : will store current state of color data array as r=255, g=255, b=255, and increment the state counter
-m=3 f=20  z                       : will set blending/patterns to start occuring at 20th led, as well as trigger blending
-m=4 l=30  z                       : will limit blending/patterns to the 30th led, as well as trigger patterns
-m=5 z                             : will initialize the first three color states in our array to be full red, full blue, full green, and change the state number appropriately
-b=255                             : will change blue parameter to full 255
-z                                 : will cause current parameters to be handled by our control method
+* m=1 r=255 g=0 b=0 f=0 l=150 i=1 z : will set every led from 0 to 150 to max red value, and 0 blue/green value
+
+* m=1 g=255 i=2 z                   : will set every second led from stored first to stored last to maximum green value, as well as whatever red/blue is currently stored
+
+
+* m=2 r=255 g=255 b=255 z           : will store current state of color data array as r=255, g=255, b=255, and increment the state counter
+
+
+* m=3 f=20  z                       : will set blending/patterns to start occuring at 20th led, as well as trigger blending
+
+
+* m=4 l=30  z                       : will limit blending/patterns to the 30th led, as well as trigger patterns
+
+
+* m=5 z                             : will initialize the first three color states in our array to be full red, full blue, full green, and change the state number appropriately
+
+
+* b=255                             : will change blue parameter to full 255
+
+
+* z                                 : will cause current parameters to be handled by our control method
 
 Note that removing z from these options will cause visible change to the parameters, but the change will not have any effect until z is ran and the parameters are handled.
 
