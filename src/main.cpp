@@ -174,7 +174,7 @@ void blend() {
 // Handler function for automatically generating Led patterns
 void pattern() {
   int pi = ci + colorLast;
-  setSomeLeds(0,0,0,0,150,1);
+  setSomeLeds(0,0,0,0,NUM_LEDS,1);
   // Build pattern
   for (int color = 0; color <= colorLast; color++) {
     int cind = (color + patternOffset) % (colorLast + 1);
